@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 301.37 49.7">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #231815;
+        stroke-miterlimit: 10;
+        stroke-width: 1.42px;
+      }
+
+      .cls-3 {
+        fill: #d4533a;
+        font-family: Mutsuki, Mutsuki;
+        font-size: 45px;
+      }
+
+      .cls-4 {
+        fill: #231815;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" width="49.7" height="49.7"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" width="49.7" height="49.7"/>
+    </clipPath>
+  </defs>
+  <text class="cls-3" transform="translate(54.65 42.05) scale(.92 1)"><tspan x="0" y="0">すべての記事</tspan></text>
+  <g class="cls-7">
+    <g class="cls-5">
+      <path class="cls-6" d="M46.42,24.85c0,11.91-9.66,21.57-21.57,21.57S3.28,36.76,3.28,24.85,12.94,3.28,24.85,3.28s21.57,9.66,21.57,21.57"/>
+      <circle class="cls-2" cx="24.85" cy="24.85" r="21.57"/>
+      <path class="cls-4" d="M24.85,24.85s13.03,7.5,0,21.57c-1.44,0-19.99.12-21.57-21.57,0-2.68,2.04-21.44,21.57-21.57,0,.56-13.16,12.35,0,21.57"/>
+      <path class="cls-2" d="M24.85,24.85s13.03,7.5,0,21.57c-1.44,0-19.99.12-21.57-21.57,0-2.68,2.04-21.44,21.57-21.57,0,.56-13.16,12.35,0,21.57Z"/>
+    </g>
+  </g>
+</svg>
