@@ -15,6 +15,7 @@
                 <li><a href="<?php echo home_url('/#allposts'); ?>">すべての記事</a></li>
                 <li><a href="<?php echo home_url('/#search'); ?>">記事をさがす</a></li>
                 <li><a href="<?php echo home_url('/#category'); ?>">カテゴリー</a></li>
+                <li><a href="<?php echo home_url('/#archive'); ?>">月間アーカイブ</a></li>
                 <li><a href="<?php echo home_url('/#profile'); ?>">プロフィール</a></li>
                 <li><a href="<?php echo home_url('/contact'); ?>">お問い合わせ</a></li>
             </ul>

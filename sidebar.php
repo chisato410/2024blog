@@ -9,10 +9,6 @@
 <section id="category">
     <h2><img src="<?php echo get_theme_file_uri('/images/categoryTitle.svg'); ?>" alt="category"></h2>
     <div class="cate">
-        <!-- <ul>
-            <li><a href="#">web</a></li>
-            <li><a href="#">デザイン</a></li>
-        </ul> -->
         <?php wp_list_categories(
             array(
                 'title_li' => '',
@@ -20,6 +16,17 @@
             )
         ); ?>
     </div><!--.cate -->
-
-
 </section><!-- /.category -->
+
+<section id="archive">
+    <h2><img src="<?php echo get_theme_file_uri('/images/archiveTitle.svg'); ?>" alt="monthArchive"></h2>
+    <div class="month">
+        <?php
+        $arg = array(
+            'type' => 'monthly',
+            'show_post_count' => '1',
+        );
+        wp_get_archives($arg);
+        ?>
+    </div><!-- /.month -->
+</section><!-- /.archive -->

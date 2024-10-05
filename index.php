@@ -27,34 +27,35 @@
                             while ($the_query->have_posts()):
                                 $the_query->the_post();
                         ?>
-                                <article id="pickup">
-                                    <h2><img src="<?php echo get_theme_file_uri('/images/pikupTitle.svg'); ?>" alt="pickup"></h2>
-                                    <div class="shine">
-                                        <a href="<?php the_permalink(); ?>">
-                                            <span class="mask">
-                                                <?php
-                                                if (has_post_thumbnail()):
-                                                    the_post_thumbnail('thumbnail');
-                                                else:
-                                                ?>
-                                                    <img src="<?php echo get_theme_file_uri('/images/notThumbnail.png'); ?>" alt="">
-                                                <?php
-                                                endif;
-                                                ?>
-                                            </span>
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <div class="time">
-                                            <i class="fa-regular fa-clock"></i>
-                                            <p><?php the_time('Y年n月j日'); ?></p>
-                                        </div><!-- /.time -->
-                                        <h3><?php the_title(); ?></h3>
-                                        <div class="cate">
-                                            <?php echo get_the_category_list(); ?>
-                                        </div><!-- /.cate -->
-                                    </div><!-- /.info -->
-                                </article><!-- /.pickup -->
+                            <article id="pickup">
+                                <h2><img src="<?php echo get_theme_file_uri('/images/pikupTitle.svg'); ?>" alt="pickup"></h2>
+                                <a href="<?php the_permalink(); ?>">
+                                <div class="bgDU">
+                                        <span class="mask">
+                                            <?php
+                                            if (has_post_thumbnail()):
+                                                the_post_thumbnail('thumbnail');
+                                            else:
+                                            ?>
+                                                <img src="<?php echo get_theme_file_uri('/images/notThumbnail.png'); ?>" alt="">
+                                            <?php
+                                            endif;
+                                            ?>
+                                            <span class="cap">記事を読む →</span>
+                                        </span>
+                                </div><!-- /.bgDU -->
+                                <div class="info">
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <p><?php the_time('Y年n月j日'); ?></p>
+                                    </div><!-- /.time -->
+                                    <h3><?php the_title(); ?></h3>
+                                    <div class="cate">
+                                        <?php echo get_the_category_list(); ?>
+                                    </div><!-- /.cate -->
+                                </div><!-- /.info -->
+                                </a>
+                            </article><!-- /.pickup -->
                         <?php
                             endwhile;
                         endif;
@@ -65,14 +66,13 @@
                             <h2><img src="<?php echo get_theme_file_uri('/images/allTiltle.svg'); ?>" alt="all articles"></h2>
 
                             <div class="items">
-
                                 <?php if (have_posts()): ?>
                                     <?php while (have_posts()): ?>
                                         <?php the_post(); ?>
 
                                         <article id="post-<?php the_ID(); ?>" <?php post_class('post'); ?>>
-                                            <div class="shine">
-                                                <a href="<?php the_permalink(); ?>">
+                                            <a href="<?php the_permalink(); ?>">
+                                            <div class="bgDU">
                                                     <span class="mask">
                                                         <?php
                                                         if (has_post_thumbnail()):
@@ -83,9 +83,9 @@
                                                         <?php
                                                         endif;
                                                         ?>
+                                                        <span class="cap">記事を読む →</span>
                                                     </span>
-                                                </a>
-                                            </div>
+                                            </div><!-- /.bgDU -->
                                             <div class="info">
                                                 <div class="time">
                                                     <i class="fa-regular fa-clock"></i>
@@ -95,8 +95,10 @@
                                                 <div class="cate">
                                                     <?php echo get_the_category_list(); ?>
                                                 </div><!-- /.cate -->
-                                            </div><!-- /.info -->
+                                            </div>
+                                            </a>
                                         </article><!-- /.post -->
+
 
                                     <?php endwhile; ?>
                                 <?php else: ?>

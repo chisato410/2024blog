@@ -14,7 +14,7 @@
                             <?php if (is_category()) : ?>
                                 <i class="fa-solid fa-folder"></i>カテゴリー : <?php single_cat_title(); ?>
                             <?php elseif (is_date()) : ?>
-                                <i class="fa-solid fa-folder"></i><?php echo get_the_date('Y年n月'); ?>の記事
+                                <i class="fa-solid fa-calendar"></i><?php echo get_the_date('Y年n月'); ?>の記事
                             <?php else: ?>
                                 <i class="fa-solid fa-folder"></i><?php the_archive_title(); ?>に関する記事
                             <?php endif; ?>
@@ -26,7 +26,7 @@
                                     <?php the_post(); ?>
 
                                     <article id="post-<?php the_ID(); ?>" <?php post_class('post'); ?>>
-                                        <div class="shine">
+                                        <div class="bgDU">
                                             <a href="<?php the_permalink(); ?>">
                                                 <span class="mask">
                                                     <?php
@@ -38,9 +38,9 @@
                                                     <?php
                                                     endif;
                                                     ?>
+                                                    <span class="cap">記事を読む →</span>
                                                 </span>
-                                            </a>
-                                        </div>
+                                        </div><!-- /.bgDU -->
                                         <div class="info">
                                             <div class="time">
                                                 <i class="fa-regular fa-clock"></i>
@@ -51,6 +51,7 @@
                                                 <?php echo get_the_category_list(); ?>
                                             </div><!-- /.cate -->
                                         </div><!-- /.info -->
+                                        </a>
                                     </article><!-- /.post -->
 
                                 <?php endwhile; ?>
