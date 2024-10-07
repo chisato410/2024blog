@@ -266,6 +266,13 @@ footer img {
     /*はじめは非表示*/
     opacity: 0;
     transform: translateY(100px);
+    width: 50px;
+}
+
+@media(min-width:800px){
+    #page-top{
+        width: 70px;
+    }
 }
 
 .top p{
@@ -339,6 +346,8 @@ footer img {
     border-radius: 15px;
     list-style: none;
     margin-right: 10px;
+    margin-top: 10px;
+    margin: 10px 10px 0 0;
 }
 
 .cate{
@@ -597,6 +606,7 @@ footer img {
 /* SP top archive */
 #archive h2{
     width: 55%;
+    margin-top: 100px;
 }
 
 #archive li{
@@ -607,6 +617,7 @@ footer img {
     padding: 5px;
     display: inline-block;
     transition-duration: .4s;
+    margin: 10px 10px 0 0;
 }
 
 #archive li:hover {
