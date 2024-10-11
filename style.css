@@ -106,7 +106,7 @@ img {
 /* 全共通 header */
 header {
     background-color: #df543a;
-    padding: 6px 0 15px;
+    padding: 25px 0 ;
 }
 
 header #top {
@@ -126,7 +126,7 @@ header h1 {
     font-weight: bold;
     letter-spacing: -0.1em;
     position: absolute;
-    top: 0;
+    top: -30px;
     left: 0;
     z-index: 999;
     width: 100%;
@@ -210,7 +210,7 @@ header h1 {
 .noodle{
     position: absolute;
     z-index: -1;
-    top: 0;
+    top: -30px;
     left: 0;
     transform: translateY(40px);
     opacity: 0;
