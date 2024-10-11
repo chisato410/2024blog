@@ -22,17 +22,20 @@
                                     <article id="post-<?php the_ID(); ?>" <?php post_class('post'); ?>>
                                         <div class="shine">
                                             <a href="<?php the_permalink(); ?>">
-                                                <span class="mask">
-                                                    <?php
-                                                    if (has_post_thumbnail()):
-                                                        the_post_thumbnail('thumbnail');
-                                                    else:
-                                                    ?>
-                                                        <img src="<?php echo get_theme_file_uri('/images/notThumbnail.png'); ?>" alt="">
-                                                    <?php
-                                                    endif;
-                                                    ?>
-                                                </span>
+                                                <div class="bgDU">
+                                                    <span class="mask">
+                                                        <?php
+                                                        if (has_post_thumbnail()):
+                                                            the_post_thumbnail('thumbnail');
+                                                        else:
+                                                        ?>
+                                                            <img src="<?php echo get_theme_file_uri('/images/notThumbnail.png'); ?>" alt="">
+                                                        <?php
+                                                        endif;
+                                                        ?>
+                                                        <span class="cap">記事を読む →</span>
+                                                    </span>
+                                                </div>
                                             </a>
                                         </div>
                                         <div class="info">

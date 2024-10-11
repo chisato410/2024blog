@@ -73,18 +73,18 @@
                                         <article id="post-<?php the_ID(); ?>" <?php post_class('post'); ?>>
                                             <a href="<?php the_permalink(); ?>">
                                             <div class="bgDU">
-                                                    <span class="mask">
-                                                        <?php
-                                                        if (has_post_thumbnail()):
-                                                            the_post_thumbnail('medium');
-                                                        else:
-                                                        ?>
-                                                            <img src="<?php echo get_theme_file_uri('/images/notThumbnail.png'); ?>" alt="">
-                                                        <?php
-                                                        endif;
-                                                        ?>
-                                                        <span class="cap">記事を読む →</span>
-                                                    </span>
+                                                <span class="mask">
+                                                    <?php
+                                                    if (has_post_thumbnail()):
+                                                        the_post_thumbnail('medium');
+                                                    else:
+                                                    ?>
+                                                        <img src="<?php echo get_theme_file_uri('/images/notThumbnail.png'); ?>" alt="">
+                                                    <?php
+                                                    endif;
+                                                    ?>
+                                                    <span class="cap">記事を読む →</span>
+                                                </span>
                                             </div><!-- /.bgDU -->
                                             <div class="info">
                                                 <div class="time">
