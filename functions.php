@@ -1,4 +1,20 @@
 <?php
+//cssを追加
+function my_style_output()
+{
+    wp_enqueue_style('reset', 'https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css');
+    wp_enqueue_style('icon-font', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+    wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet');
+    wp_enqueue_style('my-style', get_stylesheet_uri());
+}
+add_action('wp_enqueue_scripts', 'my_style_output');
+
+//jsを追加
+function my_script_output()
+{
+wp_enqueue_script('my-script', get_theme_file_uri('/index.js'), array('jquery'), '1.0.0', true);
+}
+add_action('wp_enqueue_scripts', 'my_script_output');
 
 function my_theme_support()
 {
@@ -38,22 +54,6 @@ function commentform_bottom($form_position)
     return $form_position;
 }
 
-//jsを追加
-function my_script_output()
-{
-wp_enqueue_script('my-script', get_theme_file_uri('/index.js'), array('jquery'), '1.0.0', true);
-}
-add_action('wp_enqueue_scripts', 'my_script_output');
-
-//cssを追加
-function my_style_output()
-{
-    wp_enqueue_style('reset', 'https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css');
-    wp_enqueue_style('icon-font', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
-    wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet');
-    wp_enqueue_style('my-style', get_stylesheet_uri());
-}
-add_action('wp_enqueue_scripts', 'my_style_output');
 
 // 全角スペース繋ぎで複数キーワードを検索するための処理
 function convert_fullwidth_space_to_halfwidth($query)
