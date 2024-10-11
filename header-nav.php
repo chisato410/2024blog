@@ -4,7 +4,7 @@
         <div id="top">
             <h1><a href="<?php echo home_url('/'); ?>"><img src="<?php echo get_theme_file_uri('/images/logo.svg'); ?>" alt="ebichiri_"></a></h1>
             <div class="openbtn">
-                <img class="" src="<?php echo get_theme_file_uri('/images/menuClose.png'); ?>" alt="menu">
+                <img src="<?php echo get_theme_file_uri('/images/menuClose.png'); ?>" alt="menu">
                 <p>メニュー</p>
                 <img class="noodle" src="<?php echo get_theme_file_uri('/images/menuOpen.png'); ?>" alt="">
             </div><!-- /.opnebtn -->
