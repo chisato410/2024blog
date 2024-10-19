@@ -38,6 +38,10 @@ img {
     margin-right: auto;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* ローディング */
 .hidden {
     display: none;
@@ -179,7 +183,7 @@ header h1 {
 
 #g-nav li a {
     /*リストのcss*/
-    font-size: 30px;
+    font-size: 25px;
     color: #f0f0f0;
     display: block;
     text-transform: uppercase;
@@ -220,6 +224,11 @@ header h1 {
 .active .noodle{
     transform: translateY(0);
     opacity: 1;
+}
+
+/* menu スクロールストップ */
+.stopscroll{
+    overflow: hidden;
 }
 
 /* 全共通 footer */
@@ -625,7 +634,6 @@ footer img {
 }
 
 #archive .month{
-    text-align: center;
     margin-top: 20px;
 }
 

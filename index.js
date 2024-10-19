@@ -31,15 +31,18 @@ window.addEventListener('load', function () {
     }
 });
 
+// menu
 jQuery(function () {
     jQuery(".openbtn").click(function () {//ボタンがクリックされたら
         jQuery("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
         jQuery(".openbtn").toggleClass('active');//ナビゲーションにpanelactiveクラスを付与
+        jQuery("body").toggleClass('stopscroll');// bodyにstopscrollクラスを付与
     });
 
     jQuery("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
         jQuery("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
         jQuery(".openbtn").removeClass('active');//ナビゲーションのpanelactiveクラスも除去
+        jQuery("body").removeClass('stopscroll');
     });
 
     //スクロールした際の動きを関数でまとめる
