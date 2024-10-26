@@ -162,7 +162,7 @@ header h1 {
     transition: all 0.6s;
 }
 
-#g-nav.panelactive {
+.stopscroll #g-nav.panelactive {
     /*アクティブクラスがついたら位置を0に*/
     top: 0;
 }
